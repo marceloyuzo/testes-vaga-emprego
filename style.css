@@ -1,0 +1,336 @@
+:root {
+    --color-background-header: rgba(112, 112, 112, 1);
+    --color-background-content: rgba(255, 255, 255, 1);
+    --color-font-primary: rgba(255, 255, 255, 1);
+    --color-font-secundary: rgba(136, 136, 136, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/**************
+    HEADER
+**************/
+
+.header {
+    background-color: var(--color-background-header);
+    text-align: center;
+    height: 399px;
+    display: flex;
+    flex-flow: column;
+}
+
+.header span:first-child {
+    font-size: 20px;
+    color: var(--color-font-primary);
+    margin-top: 69px;
+}
+
+.header h2 {
+    font-size: 40px;
+    color: var(--color-font-primary);
+    margin-bottom: 24px;   
+}
+
+.header span:last-of-type {
+    font-size: 14px;
+    color: var(--color-font-primary);
+    margin-bottom: 50px;
+}
+
+.header .buttonsHeader {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.header .buttonsHeader button {
+    padding: 12px 42px;
+    font-size: 14px;
+    color: var(--color-font-secundary);
+    margin: 0 20px;
+}
+
+/**************
+    HELP US
+**************/
+
+.content .helpus {
+    margin-top: 21px;
+    display: flex;
+
+}
+
+.content .helpus .text h3 {
+    font-size: 20px;
+    color: var(--color-font-secundary);
+    margin-bottom: 30px;
+}
+
+.content .helpus .text p {
+    font-size: 12px;
+    color: var(--color-font-secundary);
+    width: 520px;
+    margin-right: 60px;
+    line-height: 18px;
+}
+
+.content .helpus #formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 79px;
+}
+
+.content .helpus #formulario label {
+    font-size: 12px;
+    color: var(--color-font-secundary);
+    margin-bottom: 7px;
+    margin-right: 40px;
+}
+
+.content .helpus #formulario input {
+    width: 340px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-font-secundary);
+}
+
+.content .helpus #formulario button {
+    width: 340px;
+    height: 39px;
+    font-size: 16px;
+    color: var(--color-font-secundary);
+    background-color:rgba(255, 255, 255, 1);
+    border: 1px solid var(--color-font-secundary);
+    border-radius: 4px;
+}
+
+.content .helpus #formulario .genre {
+    font-size: 12px;
+    display: flex;
+}
+
+.content .helpus #formulario .genre input {
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+}
+
+
+/**********************
+    YOUR PRODUCTS
+**********************/
+
+.yourProducts .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.yourProducts .title h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-font-secundary);
+    margin: 0 17px;
+}
+
+.yourProducts .title .line {
+
+   width: 352px;
+   height: 50%;
+   border-bottom: 1px solid var(--color-font-secundary);
+}
+
+.yourProducts .productsLine {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 925px;
+    margin-bottom: 52px;
+}
+
+.yourProducts .products {
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    margin-bottom: 39px;
+}
+
+.yourProducts .products .imageProduct {
+    width: 200px;
+    height: 150px;
+    border: 1px solid var(--color-font-secundary);
+    margin-bottom: 14px;
+
+}
+
+.yourProducts .products .nameProduct {
+    font-size: 14px;
+    color: var(--color-font-secundary);
+    margin-bottom: 10px;
+
+}
+
+.yourProducts .products .descriptionProduct, .valueProduct, .otherValue {
+    font-size: 12px;
+    color: var(--color-font-secundary);
+    margin-bottom: 10px;
+}
+
+.yourProducts .products .promotionValue {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-font-secundary);
+    margin-bottom: 7px;
+}
+
+.yourProducts .products .buy {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-font-secundary);
+    background-color:rgba(255, 255, 255, 1);
+    border: 1px solid var(--color-font-secundary);
+    border-radius: 4px;
+}
+
+.yourProducts .moreProducts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.yourProducts .moreProducts button {
+    width: 260px;
+    height: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-font-secundary);
+    background-color:rgba(255, 255, 255, 1);
+    border: 1px solid var(--color-font-secundary);
+    border-radius: 4px;
+}
+
+/************
+    SHARE
+*************/
+
+.share {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.share .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.share .title h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-font-secundary);
+    margin: 0 17px;
+}
+
+.share .title .line {
+   width: 320px;
+   height: 100%;
+   
+   border-bottom: 1px solid var(--color-font-secundary);
+}
+
+.share span {
+    font-size: 14px;
+    color: var(--color-font-secundary);
+    margin-bottom: 39px;
+}
+
+.share #formularioAmigo {
+    margin-bottom: 72px;
+}
+
+.share #formularioAmigo .divisorFlex {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 720px;
+}
+
+.share #formularioAmigo .divisor {
+    display: flex;
+    flex-flow: column;
+}
+
+.share #formularioAmigo label {
+    font-size: 12px;
+    color: var(--color-font-secundary);
+}
+
+.share #formularioAmigo input {
+    width: 340px;
+    height: 30px;
+    border: 1px solid var(--color-font-secundary);
+    margin-bottom: 50px;
+}
+
+.share #formularioAmigo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 260px;
+    height: 39px;
+    border: 1px solid var(--color-font-secundary);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--color-font-secundary);
+    background-color: var(--color-background-content);
+}
+
+
+
+/**************
+    FOOTER
+**************/
+
+footer {
+    background-color: var(--color-background-header);
+    height: 222px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 86px;
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: var(--color-font-primary);
+    text-align: center;
+}
