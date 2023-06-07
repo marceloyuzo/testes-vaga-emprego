@@ -19,6 +19,10 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+button {
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -110,6 +114,7 @@ body {
     height: 30px;
     margin-bottom: 20px;
     border: 1px solid var(--color-font-secundary);
+    padding: 5px;
 }
 
 .content .helpus #formulario button {
@@ -131,6 +136,7 @@ body {
     height: 14px;
     width: 14px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 
@@ -165,7 +171,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 925px;
-    margin-bottom: 52px;
+    margin-bottom: 13px;
 }
 
 .yourProducts .products {
@@ -176,11 +182,13 @@ body {
 }
 
 .yourProducts .products .imageProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 150px;
     border: 1px solid var(--color-font-secundary);
     margin-bottom: 14px;
-
 }
 
 .yourProducts .products .nameProduct {
@@ -193,6 +201,20 @@ body {
 .yourProducts .products .descriptionProduct, .valueProduct, .otherValue {
     font-size: 12px;
     color: var(--color-font-secundary);
+
+}
+
+.yourProducts .products .descriptionProduct {
+    width: 200px;
+    height: 60px;
+    text-align: justify;
+}
+
+.yourProducts .products .valueProduct {
+    margin-bottom: 6px;
+}
+
+.yourProducts .products .otherValue {
     margin-bottom: 10px;
 }
 
@@ -295,6 +317,7 @@ body {
     height: 30px;
     border: 1px solid var(--color-font-secundary);
     margin-bottom: 50px;
+    padding: 5px;
 }
 
 .share #formularioAmigo button {
@@ -310,7 +333,6 @@ body {
     color: var(--color-font-secundary);
     background-color: var(--color-background-content);
 }
-
 
 
 /**************
